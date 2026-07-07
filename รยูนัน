@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYUNAN HUB</title>
+    <style>
+        :root {
+            --neon-red: #ff3131;
+            --neon-red-glow: #ff313180;
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text-color: #f0f0f0;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            background-image: radial-gradient(#262626 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .hub-container {
+            width: 90%;
+            max-width: 400px;
+            background-color: var(--card-bg);
+            border: 2px solid var(--neon-red);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 15px var(--neon-red-glow);
+            text-align: center;
+        }
+
+        .title {
+            color: var(--neon-red);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px var(--neon-red-glow);
+            margin-bottom: 25px;
+        }
+
+        .profile-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 25px auto;
+            border-radius: 15px;
+            border: 2px solid var(--neon-red);
+            box-shadow: 0 0 10px var(--neon-red-glow);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* รูปภาพจะแสดงเต็มมิติ ไม่โดนตัดขอบ */
+        }
+
+        .character-section {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .character-button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: #262626;
+            border: 1px solid var(--neon-red);
+            border-radius: 10px;
+            color: var(--text-color);
+            text-decoration: none;
+            box-shadow: 0 0 5px var(--neon-red-glow);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .character-button:hover {
+            box-shadow: 0 0 10px var(--neon-red);
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--neon-red);
+            margin-right: 10px;
+            box-shadow: 0 0 8px var(--neon-red);
+        }
+
+        .character-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .character-description {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 5px;
+            padding-left: 22px;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #262626;
+            border: 1px solid #333;
+            border-radius: 10px;
+            color: #f0f0f0;
+            text-decoration: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            border-color: #ccc;
+        }
+
+        .contact-text {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hub-container">
+        <h1 class="title">RYUNAN HUB</h1>
+
+        <div class="profile-container">
+            <img src="https://ibb.co/v699bRx6" alt="Profile Image" class="profile-img">
+        </div>
+
+        <div class="character-section">
+            <a href="#" class="character-button">
+                <div class="status-dot"></div>
+                <span class="character-name">ข้อมูลตัวละครหน้าบ้าน</span>
+            </a>
+            <p class="character-description">- เป็นตัวละครที่จะเปิดเผย และปล่อยลงให้เล่นหน้าบ้านเลิฟวี่ดัฟวี่ของรยูนันเท่านั้น ตัวอย่างเช่น ลุงวันดี, อื่นๆ</p>
+
+            <a href="#" class="character-button">
+                <div class="status-dot"></div>
+                <span class="character-name">ข้อมูลตัวละครหลังบ้าน</span>
+            </a>
+            <p class="character-description">- เป็นตัวละครที่ไม่เปิดเผย หรือตัวละครที่ทางรยูนันใช้เทสบอทหน้าบ้านเท่านั้น การแยกตัวละครหน้าบ้านคือให้ดู หัวข้อไฮไลท์ของสตอรี่นั้นๆที่รยูนันได้เพิ่มเอาไว้ในไอจี</p>
+        </div>
+
+        <div class="contact-section">
+            <p class="contact-text">ช่องทางการติดต่อ & แพลตฟอร์มบอท</p>
+            <a href="#" class="contact-button">📷 Instagram (zwexur._)</a>
+            <a href="#" class="contact-button">🎵 TikTok</a>
+            <a href="#" class="contact-button">💕 LoveyDovey</a>
+        </div>
+    </div>
+</body>
+</html>
